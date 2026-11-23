@@ -65,7 +65,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="relative mx-auto w-full max-w-xl md:max-w-none">
+      <div className="relative order-first mx-auto w-full max-w-xl md:order-none md:max-w-none">
         <div className="overflow-hidden rounded-[2rem] bg-secondary">
           <img
             src="/cake-hero.png"

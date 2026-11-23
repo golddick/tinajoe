@@ -3,9 +3,9 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'crumb.studio — Thoughtful cakes for life’s sweetest chapters',
+  title: 'Tina.Joe — Thoughtful cakes for life’s sweetest chapters',
   description: 'Design a celebration cake, pay the full total at checkout, and await bakery approval.',
-  generator: 'v0.app',
+  generator: 'sixthgrid',
   icons: {
     icon: [
       {
@@ -26,11 +26,8 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light dark',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+  colorScheme: 'light',
+  themeColor: 'white',
 }
 
 export default function RootLayout({
