@@ -26,7 +26,7 @@ export async function sendCustomerEmail(email: CustomerEmail) {
     subject: email.subject,
     html,
     text,
-    fromName: 'TinaJoe.Studio',
+    fromName: 'TINA.JOE',
     metadata: email.metadata,
   })
 }

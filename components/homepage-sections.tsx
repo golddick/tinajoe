@@ -68,7 +68,7 @@ export function HeroSection() {
       <div className="relative order-first mx-auto w-full max-w-xl md:order-none md:max-w-none">
         <div className="overflow-hidden rounded-[2rem] bg-secondary">
           <img
-            src="/cake-hero.png"
+            src="/cake-hero.webp"
             alt="Blush and lilac ombré celebration cake"
             className="aspect-[4/5] w-full object-cover"
           />
@@ -201,14 +201,14 @@ export function SiteFooter({
     <footer className="bg-primary px-5 py-12 text-primary-foreground md:px-10">
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 sm:flex-row">
         <div>
-          <p className="font-serif text-3xl">crumb.studio</p>
+          <p className="font-serif text-3xl">TINA.JOE</p>
           <p className="mt-3 max-w-xs text-sm leading-6 text-primary-foreground/90">
             Thoughtful cakes for life&apos;s sweetest chapters.
           </p>
         </div>
         <address className="flex flex-col gap-3 text-sm not-italic text-primary-foreground/90">
           <p className="flex items-center gap-2">
-            <MapPin aria-hidden="true" /> South London, UK
+            <MapPin aria-hidden="true" /> Lagos, NG
           </p>
           <a
             className="flex items-center gap-2 hover:underline"

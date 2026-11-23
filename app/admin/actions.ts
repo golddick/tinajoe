@@ -162,7 +162,7 @@ function getInvitationOrigin() {
       : process.env.VERCEL_URL
         ? `https://${process.env.VERCEL_URL}`
         : process.env.V0_RUNTIME_URL) ??
-    (process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : '')
+    (process.env.NODE_ENV === 'development' ? 'https://tinajoe.vercel.app' : '')
 
   if (!configuredOrigin) {
     throw new Error('Configure BETTER_AUTH_URL before sending admin invitations.')
@@ -294,10 +294,10 @@ export async function createAdminInvitation(input: {
 
   const content = {
     preheader: 'You have been invited to join the studio admin team.',
-    title: 'Studio administrator invitation',
+    title: 'TINA.JOE Studio administrator invitation',
     greeting: `Hello ${name},`,
     paragraphs: [
-      'A studio administrator invited you to help manage the bakery workspace. Your account will have administrator access.',
+      'The studio administrator invited you to help manage the bakery workspace. Your account will have administrator access.',
       'Use the secure link below within seven days to confirm your name and email and create a password.',
     ],
     details: [{ label: 'Invited email', value: email }],
@@ -307,10 +307,10 @@ export async function createAdminInvitation(input: {
   try {
     await sendTransactionalEmail({
       to: email,
-      subject: 'You are invited to the TinaJoe.studio admin team',
+      subject: 'You are invited to the TINA.JOE studio admin team',
       html,
       text,
-      fromName: 'TinaJoe.Studio',
+      fromName: 'TINA.JOE',
     })
   } catch (error) {
     console.error('Admin invitation email could not be sent:', error)

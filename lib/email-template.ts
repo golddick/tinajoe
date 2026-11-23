@@ -55,7 +55,7 @@ export function renderBrandedEmail(content: BrandedEmailContent) {
     ? `<table role="presentation" cellspacing="0" cellpadding="0" style="margin:28px 0 8px;"><tr><td align="center" style="border-radius:999px;background:#49382f;"><a href="${escapeHtml(getButtonUrl(content.button.url))}" style="display:inline-block;padding:14px 24px;color:#fffaf4;font-size:14px;font-weight:700;line-height:20px;text-decoration:none;">${escapeHtml(content.button.label)}</a></td></tr></table>`
     : ''
   const text = [
-    'crumb.studio',
+    'TINA.JOE',
     content.title,
     '',
     content.greeting,
@@ -72,7 +72,7 @@ export function renderBrandedEmail(content: BrandedEmailContent) {
       : []),
     '',
     'With care,',
-    'The Crumb Studio team',
+    'The TINA.JOE team',
   ].join('\n')
 
   const html = `<!doctype html>
@@ -91,7 +91,7 @@ export function renderBrandedEmail(content: BrandedEmailContent) {
           <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:600px;border-collapse:separate;border-spacing:0;">
             <tr>
               <td style="padding:8px 24px 22px;text-align:center;">
-                <p style="margin:0;color:#49382f;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:700;letter-spacing:-0.6px;">crumb<span style="color:#c98675;">.</span>studio</p>
+                <p style="margin:0;color:#49382f;font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:700;letter-spacing:-0.6px;">TINA.JOE</p>
                 <p style="margin:7px 0 0;color:#81746a;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;">Thoughtful cakes for life’s sweetest chapters</p>
               </td>
             </tr>
@@ -110,7 +110,7 @@ export function renderBrandedEmail(content: BrandedEmailContent) {
             <tr>
               <td style="padding:20px 24px 8px;text-align:center;">
                 <p style="margin:0;color:#81746a;font-size:11px;line-height:18px;">A little sweetness, made just for your celebration.</p>
-                <p style="margin:7px 0 0;color:#a0958b;font-size:10px;line-height:16px;">crumb.studio</p>
+                <p style="margin:7px 0 0;color:#a0958b;font-size:10px;line-height:16px;">TINA.JOE</p>
               </td>
             </tr>
           </table>

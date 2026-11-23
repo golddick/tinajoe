@@ -16,7 +16,7 @@ export default function SiteHeader() {
   return (
     <header className="relative z-20 mx-auto flex max-w-7xl items-center justify-between px-5 py-5 md:px-10">
       <a href="#top" className="font-serif text-2xl tracking-tight">
-        Tina<span className="text-accent-foreground">.</span>joe
+        TINA<span className="text-accent-foreground">.</span>JOE
       </a>
 
       <nav
@@ -36,16 +36,16 @@ export default function SiteHeader() {
 
       <div className="flex items-center gap-3">
         <CurrencySelector />
-        <a
+        {/* <a
           aria-label="Instagram gallery"
           href="#gallery"
           className="hidden rounded-full border border-border p-2 md:block"
         >
           <Camera aria-hidden="true" />
-        </a>
+        </a> */}
         <a
           href="#builder"
-          className="rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
+          className="rounded-full hidden md:block bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
         >
           Start building
         </a>
