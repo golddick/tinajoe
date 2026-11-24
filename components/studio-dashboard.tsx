@@ -683,11 +683,13 @@ export default function StudioDashboard({
             )
           })}
         </nav>
-        <div className="mt-auto rounded-2xl bg-primary-foreground/15 p-4 text-sm">
-          <Sparkles className="mb-3" />
+        <div className="mt-6 rounded-2xl bg-primary-foreground/15 p-4 text-sm">
+          <div className="flex items-center gap-3">
+            <Sparkles className=" size-5" />
           <p className="font-medium">
             <AdminGreeting name={adminName} />
           </p>
+          </div>
           <p className="mt-1 leading-5 text-primary-foreground/85">
             Your studio is looking lovely today.
           </p>
